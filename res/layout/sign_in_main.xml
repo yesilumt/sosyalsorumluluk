@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9BA7D2"
+    android:padding="24dp">
+
+    <!-- Saat, sinyal ve pil göstergeleri üstte -->
+
+    <!-- Signup Kart -->
+    <LinearLayout
+        android:id="@+id/card_signup"
+        android:layout_width="328dp"
+        android:layout_height="586dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFFFF"
+        android:clipToOutline="true"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:outlineProvider="background"
+        android:padding="24dp">
+
+        <!-- Signup başlığı -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Sign Up"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Alt başlık (Hesap oluşturma) -->
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Create your account"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <!-- Kullanıcı adı Kart (Beyaz arka plan) -->
+        <!-- Email Kart (Beyaz arka plan) -->
+        <LinearLayout
+            android:id="@+id/card_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:clipToOutline="true"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:drawablePadding="12dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Şifre Kart (Beyaz arka plan) -->
+        <LinearLayout
+            android:id="@+id/card_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:clipToOutline="true"
+                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                android:drawablePadding="12dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Şifre tekrar Kart (Beyaz arka plan) -->
+        <LinearLayout
+            android:id="@+id/card_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:clipToOutline="true"
+                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                android:drawablePadding="12dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Kayıt ol butonu -->
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#2196F3"
+            android:clipToOutline="true"
+            android:padding="12dp"
+            android:text="Sign Up"
+            android:onClick="signuponclick"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- Giriş yap bağlantısı -->
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Already have an account? Log in"
+            android:textColor="#6A1B9A"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

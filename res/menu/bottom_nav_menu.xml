@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Ana sayfa"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:id="@+id/navhome" />
+    <item android:title="Hayvan ekle"
+        android:icon="@drawable/add"
+        android:id="@+id/navekle"/>
+    <item android:title="Hayvanlar"
+        android:icon="@drawable/baseline_co_present_24"
+        android:id="@+id/navhayvanlar"/>
+    <item android:title="Profil"
+        android:icon="@drawable/baseline_calendar_view_month_24"
+        android:id="@+id/navprofil"/>
+</menu>

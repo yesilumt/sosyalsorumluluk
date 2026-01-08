@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Uygulamanın ana teması -->
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Ana renkler -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+    </style>
+
+    <!-- BottomNavigationView Aktif Yazı Stili -->
+    <style name="ActiveTextStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+    <!-- BottomNavigationView İnaktif Yazı Stili -->
+    <style name="InactiveTextStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/secondary_color</item>
+    </style>
+
+</resources>
